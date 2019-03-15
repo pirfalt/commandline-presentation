@@ -3,7 +3,21 @@
 Introduction
 
 - CI/CD
+  - On a remote machine or buildserver you may be required to use the commandline.
 - Windows 10. Windows subsystem for linux :)
+  - Speaker note, this is where I started to learn. Thanks microsoft.
+
+Useful links:
+
+- https://devhints.io/
+  - Cheetsheet, I look at this all the time.
+- https://github.com/anordal/shellharden
+  - Lint your bash scripts, so you don't forget the quotes.
+
+## Preparations
+
+![Get the bob cookie](find-the-cookie.png)
+![Run selection in vs-code terminal](run-selection-in-terminal.png)
 
 ## STDIN, STDOUT and STDERR
 
@@ -42,13 +56,27 @@ Pipe and filters.
 
 Concatenate multiple input files. Or just the one.
 
+```sh
+cat presentation.md
+```
+
 ## `less`
 
-Read a _less_ of a file.
+Read a _less_ of a file. Is also used by many other programs for reading output.
+
+```sh
+# Try using `h` for help, `k/j`, `up/down`, `u/d` for movement and `/` for searching.
+
+less presentation.md
+
+git log
+
+man echo
+```
 
 ## `man`
 
-Read the manual.
+Read the manual. Using less.
 
 ## `curl`
 
